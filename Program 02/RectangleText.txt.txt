@@ -1,0 +1,23 @@
+from RectangleClass import Rectangle
+
+def main():
+  
+  user = Rectangle(1, 2) #Calls the class 'Rectangle' and stores '1' and '2' in 'width' and 'length'
+  print('Your starting width is:', user.width, 'and your starting length is:', user.length)
+  print('There for your width is:', user.get_area(), 'and your length is:', user.get_perimeter())
+  
+  print()
+  
+  user = 0
+  while True:
+    try:
+      user = Rectangle (int(input('Now you try! Enter a width:')), int(input('Enter a height:')))
+    except ValueError:
+      print('Not an integer!')
+      continue
+    else:
+      print ('Area of the rectangle is:', user.get_area()) #Calls the function 'get_area' found in the class
+      print ('Perimeter of the rectangle is:', user.get_perimeter()) #Calls the function 'get_perimeter' found in the class
+      break #stops the loop
+
+main()

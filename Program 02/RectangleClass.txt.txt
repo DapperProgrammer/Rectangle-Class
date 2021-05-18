@@ -1,0 +1,18 @@
+class Rectangle:
+  def __init__(self, width, length):
+    self.width = width
+    self.length = length
+  
+  def set_area(self, width):
+    self.width = width
+    
+  def get_area(self):
+    rectangle_area = self.width * self.length # 1 * 2 sets the answer to 'rectangle_area'
+    return(rectangle_area) #prints out 1 * 2
+    
+  def set_perimeter(self, length):
+    self.length = length
+
+  def get_perimeter(self): #Assigns the variable self (and all arguements attached to it) to the function
+    rectangle_perimeter = 2*(self.width + self.length) # 2 * (1+2)
+    return(rectangle_perimeter) #prints out 2 * (1 + 2)
